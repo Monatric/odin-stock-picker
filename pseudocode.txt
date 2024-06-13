@@ -1,0 +1,18 @@
+For the first iteration 1st level, element 0 is taken, then proceeds with another iteration in 2nd level,
+that starts at element index+1. So, first_level_index0 and second_level_index1 are subtracted together.
+
+The difference is then used with #abs to get the absolute value, in case of negative integers
+
+Then it goes first_level_index0 - second_level_index2, then second_level_index3, and so forth.
+
+After the second level iteration runs out of elements, first level iteration goes up an index
+
+Then it becomes first_level_index1 - second_level_index2, second_level_index3, so forth.
+
+Per first_level_index and second_level_index, return that as a key in a hash,
+and the difference as its value
+
+The entire result of all iterations returns a hash full of pair of days and the difference
+as their key value pairs respectively.
+
+Iterate over the hash and find the highest value, as that indicates the highest profit of all pair of days.
